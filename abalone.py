@@ -31,5 +31,4 @@ x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.33, random_
 clf = LinearRegression()
 clf = clf.fit(x_train, y_train)
 res = clf.predict(x_test)
-
-print(str(2)+" RMSE = ", np.sqrt(mean_squared_error(y_test, res)))s
+print(str(2)+" RMSE = ", np.sqrt(mean_squared_error(y_test, res)))
